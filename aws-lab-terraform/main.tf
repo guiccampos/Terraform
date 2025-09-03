@@ -12,8 +12,8 @@ module "aws-lab-vpc" {
   cidr = var.vpc_cidr
 
   azs             = ["us-east-1a"]
-  private_subnets = var.private_subnets
-  public_subnets  = var.public_subnets
+  private_subnets = var.vpc_private_subnets
+  public_subnets  = var.vpc_public_subnets
 
   create_igw           = true
   enable_dns_hostnames = true

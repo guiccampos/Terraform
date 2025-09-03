@@ -8,7 +8,12 @@ output "aws_lab_vpc_id" {
   value       = module.aws-lab-vpc.vpc_id
 }
 
-output "aws_lab_sg_id"{
+output "aws_lab_public_subnet_id"{
+  description = "VPC public subnet ID"
+  value = module.aws-lab-vpc.public_subnets
+}
+
+output "aws_lab_sg_id" {
   description = "Security Group ID"
-  value = module.aws-lab-sg.security_group_id
+  value       = module.aws-lab-sg.security_group_id
 }
